@@ -1,0 +1,33 @@
+<script type="text/javascript">
+    RED.nodes.registerType('enocean',{
+        category: 'input',
+        color: '#f15c27',
+        defaults: {
+            name: {value:""},
+	    serial: {value:"/dev/ttyAMA0"}
+        },
+        inputs:0,
+        outputs:1,
+        icon: "enocean.png",
+        label: function() {
+            return this.name||"enocean";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="enocean">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-serial"><i class="fa fa-random"></i> Serial Port</label>
+        <input type="text" id="node-input-serial" placeholder="Serialport">
+    </div>
+
+</script>
+
+<script type="text/x-red" data-help-name="enocean">
+    <p>This is my enocean</p>
+</script>
