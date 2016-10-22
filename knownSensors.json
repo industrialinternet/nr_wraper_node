@@ -1,0 +1,35 @@
+// /home/pi/.node-red/node_modules/node-enocean/modules/knownSensors.json
+{
+    "002498a1": {
+        "id": "002498a1",
+        "eep": "f6-02-03",
+        "manufacturer": "ENOCEAN_GMBH",
+        "title": "A Switch",
+        "desc": "This is a rocker switch",
+        "eepFunc": "Rocker Switch, 2 Rocker",
+        "eepType": "Light Control - Application Style 1",
+        "last": [
+            {
+                "type": "state",
+                "unit": "",
+                "value": "released"
+            }
+        ]
+    },
+	"0000de7b": {
+        "id": "0000de7b",
+        "eep": "a5-02-05",
+        "manufacturer": "omnio",
+        "title": "14",
+        "desc": "ii office",
+        "eepFunc": "Temperature Sensor",
+        "eepType": "Temperature Sensor Range 0°C to +40˚C",
+        "last": [
+            {
+                "type": "Temperature",
+                "unit": "°C",
+                "value": -1
+            }
+        ]
+    }
+}
